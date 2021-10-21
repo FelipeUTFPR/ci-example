@@ -4,14 +4,14 @@ describe('Utils', () => {
     describe('gerarNumeroAleatorio', () => {
         test('fim nao pode ser negativo', () => {
             expect(gerarNumeroAleatorio(20, -5))
-                .toBe(-1);
+                .toBe(-0);
         });
     });
 
     describe('acharCaracter', () => {
         test('comprimento invalido', () => {
             expect(acharCaracter(-4, 'abcde', 'c'))
-                .toBe('comprimento invalido');
+                .toBe('comprimento invalid');
         });
     });    
 });
